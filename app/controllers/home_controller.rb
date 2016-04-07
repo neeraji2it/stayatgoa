@@ -3,6 +3,7 @@ class HomeController < ApplicationController
   	   @contacts = Contact.all
   	   
   end
+  
 def contact
 end
 
