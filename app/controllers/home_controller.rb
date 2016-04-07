@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   	   @contacts = Contact.all
   	   
   end
-  
+
 def contact
 end
 
@@ -18,5 +18,5 @@ end
           respond_to do |format|
             format.js
           end            
-  end
+   end
 end
