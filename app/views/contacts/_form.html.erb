@@ -1,0 +1,35 @@
+<%= form_for contacts_path, html: { multipart: true } do |f| %>
+  
+
+ <%= f.label :name %><br/>
+  <div class="input-group">
+          <span class="input-group-addon glyphicon glyphicon-user"></span>
+          <%= f.text_field :name, placeholder: "Customer Name", class: "form-control input-lg", label: false, :required =>true %>
+        </div><br/>
+          <%= f.label :email %><br/>
+  <div class="input-group">
+          <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+          <%= f.email_field :email, placeholder: "Email Addrese", class: "form-control input-lg", label: false, :required =>true %>
+        </div><br/>
+
+<%= f.label :phone %><br/>
+  <div class="input-group">
+          <span class="input-group-addon glyphicon glyphicon-phone"></span>
+          <%= f.phone_field :phone_no, placeholder: "Phone Number", class: "form-control input-lg", label: false, :required =>true %>
+        </div><br/>
+
+  <%= f.label :PostAddrese %><br/>
+  <div class="input-group">
+          <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+          <%= f.text_field :post_address, placeholder: "Post Addrese", class: "form-control input-lg", label: false, :required =>true %>
+        </div><br/>
+
+
+        <%= f.label :message %><br/>
+  <div class="input-group">
+          <span class="input-group-addon glyphicon glyphicon-comment"></span>
+          <%= f.text_area :message, placeholder: "Message", class: "form-control input-lg", label: false, :required =>true %>
+        </div><br/>
+
+  <%= f.submit "Create Contact",class: "btn btn-primary"%>
+    <% end %>
