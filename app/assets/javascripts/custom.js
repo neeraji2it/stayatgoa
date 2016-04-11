@@ -7,7 +7,7 @@
     // Location Address
     //-------------------------------------------------------------------------------
     var companyName = 'Accomodation Landing Page';
-    var address = '144 Victoria Rd, Woodstock, Cape Town 7915 South Africa'; // Enter your Address
+    var address = 'Calangute Beach, Goa'; // Enter your Address
 
 
     // Navigation Close on Click
