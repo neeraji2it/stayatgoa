@@ -6,7 +6,7 @@ def send_contact(name, email, subject, message)
 @subject = subject
 @message = message
 
-mail(:to => "kammaranagaraju@gmail.com", :subject => subject)
+mail(:to => "sneha@dine-media.com", :subject => subject)
 end
 
 def send_invoice(order)
