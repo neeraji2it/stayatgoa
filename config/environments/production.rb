@@ -81,8 +81,8 @@ config.action_mailer.delivery_method = :smtp
 config.action_mailer.smtp_settings = {
 :address => "smtp.gmail.com",
 :port => 587,
-:user_name => 'stay@gova.com',
-:password => 'livegov2016',
+:user_name => 'kammaranagaraju@gmail.com',
+:password => 'Nagaraju@2015',
 :authentication => 'plain',
 :enable_starttls_auto => true
 }

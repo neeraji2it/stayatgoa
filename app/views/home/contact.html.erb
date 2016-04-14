@@ -1,6 +1,4 @@
-<section class="post-wrapper-top dm-shadow">
-<div id="responsive_map"></div>
-</section><!-- end post-wrapper-top -->
+
 <section id="contact_page" class="section-single">
 <div class="container">
 <div class="fullwidth-post-wrapper col-lg-12">
@@ -14,45 +12,3 @@
 </div><!-- end col-lg-6 -->
 
 </section><!-- end section-single -->
-<script>
-// MAP
-jQuery(document).ready(function ($) {
-$("#responsive_map").gMap({
-maptype: google.maps.MapTypeId.ROADMAP,
-zoom: 12,
-markers: [{
-latitude: 12.90759,
-longitude: 77.62689,
-html: "<img src='/assets/logo.png' width='69' height='27'><br/>No.270/2/21, Near Bhanu Nurshing Home <br> Sir MV Road , Bommanahalli<br> Bangalore - 560068<br>",
-popup: true,
-flat: true,
-icon: {
-image: "/assets/tunnel.png",
-iconsize: [32, 37],
-iconanchor: [15, 30],
-shadow: "/assets/icon-shadow.png",
-shadowsize: [32, 37],
-shadowanchor: null}
-}
-],
-panControl: true,
-zoomControl: true,
-mapTypeControl: true,
-scaleControl: true,
-streetViewControl: true,
-scrollwheel: false,
-styles: [{"stylers": [{"hue": "#007ACC"}, {"gamma": 0}]}],
-onComplete: function () {
-// Resize and re-center the map on window resize event
-var gmap = $("#responsive_map").data('gmap').gmap;
-window.onresize = function () {
-google.maps.event.trigger(gmap, 'resize');
-$("#responsive_map").gMap('fixAfterResize');
-};
-}
-});
-});
-</script>
-
-  
-
